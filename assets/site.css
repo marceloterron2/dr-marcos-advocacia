@@ -68,3 +68,22 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spac
 @media(max-width:1050px){.hero-artboard{min-height:450px}.visual-initials{font-size:6rem}.visual-center span{font-size:1.1rem}.header-inner .nav{display:none}}
 @media(max-width:740px){.hero-art{min-height:0}.hero-artboard{width:100%;min-height:300px;padding:24px}.hero-artboard:before{inset:34px}.visual-center{margin:10px 0}.visual-initials{font-size:5.25rem}.visual-center svg{display:none}.visual-center span{font-size:1.1rem}.visual-bottom{font-size:.67rem}.hero-grid{gap:26px}.doc-hero{padding:58px 0}.paper{padding:25px 21px}.about-split,.info-tiles,.contact-info-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.mobile-action{display:block;position:sticky;bottom:0;background:#fff;padding:11px 20px;border-top:1px solid #e4e6e3;z-index:30;box-shadow:0 -4px 20px #132b3821}.mobile-action .button{width:100%;padding:13px}}
 
+
+/* Organização inspirada em referência institucional de advocacia, sem copiar conteúdo — v3 */
+.quick-services{position:relative;z-index:3;background:#fff;border-bottom:1px solid #e9e4d9;padding:0 0 24px}
+.quick-services .wrap{margin-top:-36px;position:relative}
+.quick-intro{padding:42px 0 16px;display:flex;justify-content:space-between;gap:30px;align-items:end}
+.quick-intro h2{font-size:clamp(1.6rem,3vw,2.45rem);color:#112735;margin:10px 0}
+.quick-intro p{font-size:.91rem;max-width:410px}
+.quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.quick-item{display:flex;flex-direction:column;min-height:204px;justify-content:space-between;padding:25px 22px 20px;background:#fff;border:1px solid #e2dfd7;border-radius:11px;box-shadow:0 13px 40px rgba(18,37,51,.08);transition:.2s ease}
+.quick-item:hover{border-color:#b99766;transform:translateY(-4px);box-shadow:0 17px 45px rgba(18,37,51,.14)}
+.quick-item .quick-symbol{width:47px;height:47px;display:grid;place-items:center;border-radius:50%;background:#f7f1e7;color:#a88551;font:1.4rem Georgia,serif}
+.quick-item strong{display:block;font:1.19rem Georgia,serif;line-height:1.2;color:#172f3e;margin-top:13px}
+.quick-item .more{font-size:.79rem;font-weight:700;color:#987546;padding-top:10px}
+.about .identity{background:#fff}
+.about .section-title{font-size:clamp(2rem,4vw,3.25rem)}
+.reference-note{display:flex;gap:14px;align-items:flex-start;margin-top:24px;padding:14px 17px;background:#f7f3eb;border-left:3px solid #b99766}
+.reference-note p{font-size:.82rem}
+@media(max-width:1000px){.quick-grid{grid-template-columns:repeat(2,1fr)}.quick-services .wrap{margin-top:0}}
+@media(max-width:740px){.quick-intro{display:block;padding:26px 0 15px}.quick-grid{gap:11px}.quick-item{min-height:174px;padding:20px 15px}.quick-item strong{font-size:1rem}.quick-item .quick-symbol{width:39px;height:39px}.quick-item .more{font-size:.72rem}.quick-services{padding-bottom:33px}}
