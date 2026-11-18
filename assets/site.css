@@ -87,3 +87,11 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spac
 .reference-note p{font-size:.82rem}
 @media(max-width:1000px){.quick-grid{grid-template-columns:repeat(2,1fr)}.quick-services .wrap{margin-top:0}}
 @media(max-width:740px){.quick-intro{display:block;padding:26px 0 15px}.quick-grid{gap:11px}.quick-item{min-height:174px;padding:20px 15px}.quick-item strong{font-size:1rem}.quick-item .quick-symbol{width:39px;height:39px}.quick-item .more{font-size:.72rem}.quick-services{padding-bottom:33px}}
+
+/* Aviso institucional independente — v4 */
+.disclaimer-publico{display:flex;align-items:flex-start;gap:17px;background:#152d3b;border:1px solid #49606a;border-left:4px solid #c6a16d;border-radius:9px;padding:25px 27px;margin-top:38px}
+.disclaimer-publico__icon{flex:0 0 30px;width:30px;height:30px;border:1px solid #c6a16d;border-radius:50%;color:#d8b98a;display:grid;place-items:center;font:700 1.12rem Georgia,serif}
+.disclaimer-publico strong{font-family:inherit;display:block;color:#f2e3ca;font-size:.82rem;letter-spacing:.045em;margin-bottom:9px}
+.disclaimer-publico p{max-width:none;color:#c9d7d9;font-size:.82rem;line-height:1.8;margin:0}
+.disclaimer-publico p strong{display:inline;color:#eff4f2;font-size:inherit;letter-spacing:normal;font-weight:650;margin:0}
+@media(max-width:740px){.disclaimer-publico{padding:19px 17px;gap:12px;margin-top:27px}.disclaimer-publico p{font-size:.79rem}.disclaimer-publico__icon{flex-basis:25px;width:25px;height:25px}}
