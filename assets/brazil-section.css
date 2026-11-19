@@ -1,0 +1,60 @@
+/* Seção de atendimento nacional: conteúdo à esquerda e foto/arte da bandeira à direita */
+.lp-page .lp-final-cta{padding:78px 0;background:#193747}
+.lp-page .lp-final-cta .lp-brazil-layout{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:center;
+  gap:clamp(30px,5vw,78px);
+}
+.lp-page .lp-brazil-content{min-width:0}
+.lp-page .lp-brazil-content .lp-kicker{display:block;margin-bottom:12px}
+.lp-page .lp-brazil-content h2{
+  max-width:650px;
+  font-size:clamp(2.05rem,3.4vw,3.1rem);
+  line-height:1.17;
+  margin:0 0 18px;
+}
+.lp-page .lp-brazil-content p{
+  max-width:610px;
+  font-size:.98rem;
+  line-height:1.75;
+  margin:0;
+}
+.lp-page .lp-brazil-action{margin-top:27px}
+.lp-page .lp-brazil-action a.wa-cta{
+  display:inline-flex!important;
+  width:auto!important;
+  max-width:100%;
+  margin:0!important;
+}
+.lp-page .lp-brazil-figure{
+  position:relative;
+  margin:0;
+  padding:13px;
+  min-width:0;
+  border:1px solid rgba(248,253,251,.18);
+  border-radius:16px;
+  background:rgba(255,255,255,.055);
+  box-shadow:0 19px 50px rgba(0,0,0,.19);
+}
+.lp-page .lp-brazil-figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 9px 24px rgba(0,0,0,.19);
+}
+@media(max-width:850px){
+  .lp-page .lp-final-cta{padding:62px 0}
+  .lp-page .lp-final-cta .lp-brazil-layout{grid-template-columns:1fr;gap:30px}
+  .lp-page .lp-brazil-figure{width:min(100%,500px);margin:0 auto}
+  .lp-page .lp-brazil-content h2{font-size:clamp(2rem,6.4vw,2.7rem)}
+}
+@media(max-width:640px){
+  .lp-page .lp-brazil-content h2{font-size:2.05rem}
+  .lp-page .lp-brazil-content p{font-size:.94rem}
+  .lp-page .lp-brazil-figure{padding:9px}
+  .lp-page .lp-brazil-action a.wa-cta{width:auto!important}
+}
