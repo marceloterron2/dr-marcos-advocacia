@@ -1,79 +1,80 @@
-/* CTAs padronizados para WhatsApp — canal único de contato */
+/* CTA WhatsApp compacto: ícone à direita, sem telefone visível — v2 */
 a.wa-cta,
 .lp-page a.wa-cta,
 a.wa-cta.button,
 a.wa-cta.lp-btn,
 .lp-page a.wa-cta.lp-situation-cta{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  vertical-align:middle;
-  gap:12px;
-  flex:0 1 auto;
+  display:inline-flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  flex:0 0 auto;
+  width:auto!important;
   max-width:100%;
-  min-height:60px;
-  padding:11px 19px;
-  border:1px solid #168c4c;
-  border-radius:8px;
-  background:#1da858 !important;
-  color:#fff !important;
-  text-decoration:none;
-  text-align:left;
-  box-shadow:0 5px 15px rgba(18,100,62,.16);
-  white-space:normal;
-  font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  min-height:41px!important;
+  padding:10px 17px!important;
+  background:#29b56b!important;
+  color:#fff!important;
+  border:1px solid #1e9457!important;
+  border-radius:2px!important;
+  box-shadow:0 0 0 3px rgba(13,24,38,.9)!important;
+  text-decoration:none!important;
+  font:600 12px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;
+  white-space:nowrap!important;
+  text-align:center;
+  vertical-align:middle;
   cursor:pointer;
-  transition:background .2s,transform .2s;
+  transition:background-color .15s ease,transform .15s ease;
 }
-a.wa-cta:hover,
-a.wa-cta:focus-visible,
-.lp-page a.wa-cta:hover{
-  background:#148849 !important;
-  border-color:#148849;
-  color:#fff !important;
-}
-a.wa-cta:hover{transform:translateY(-1px)}
-a.wa-cta .wa-cta-icon{
-  display:block;
-  flex:0 0 25px;
-  width:25px;
-  height:25px;
-  color:currentColor;
+a.wa-cta:hover,.lp-page a.wa-cta:hover{
+  background:#23995b!important;
+  color:#fff!important;
+  transform:translateY(-1px);
 }
 a.wa-cta .wa-cta-copy{
-  display:flex;
+  display:inline-flex!important;
+  align-items:center!important;
   min-width:0;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:3px;
-  line-height:1.2;
+  flex-direction:row!important;
+  line-height:1.3!important;
 }
-a.wa-cta .wa-cta-label{font-size:.9rem;font-weight:760;letter-spacing:0}
-a.wa-cta .wa-cta-phone{font-size:.74rem;font-weight:600;letter-spacing:.02em;opacity:.93}
+a.wa-cta .wa-cta-label{
+  display:inline!important;
+  color:#fff!important;
+  font:600 12px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;
+  letter-spacing:0!important;
+  white-space:nowrap!important;
+}
+a.wa-cta .wa-cta-icon{
+  display:block!important;
+  order:2;
+  width:14px!important;
+  height:14px!important;
+  flex:0 0 14px!important;
+  color:#fff;
+}
 .lp-page .lp-hero-actions{display:block}
-.lp-page .lp-hero-actions .wa-cta{width:auto;max-width:100%}
-.lp-page .lp-center-action .wa-cta{width:auto;max-width:100%}
-.lp-page .lp-situation-cta.wa-cta{width:auto;max-width:100%}
-.lp-page .lp-header-button.wa-cta{padding:8px 12px;min-height:49px}
-.lp-page .lp-header-button.wa-cta .wa-cta-icon{width:21px;height:21px;flex-basis:21px}
-.lp-page .lp-header-button.wa-cta .wa-cta-label{font-size:.75rem}
-.lp-page .lp-header-button.wa-cta .wa-cta-phone{font-size:.7rem}
+.lp-page .lp-hero-actions a.wa-cta,
+.lp-page .lp-center-action a.wa-cta,
+.lp-page .lp-situation-cta.wa-cta,
+.lp-page .lp-about-copy a.wa-cta,
+.lp-page .lp-national a.wa-cta,
+.lp-page .lp-final-inner a.wa-cta,
+.lp-page .lp-faq-grid a.wa-cta{width:auto!important;max-width:100%}
 .lp-page .lp-header-inner{gap:13px}
 .lp-page .lp-nav{gap:16px}
-.lp-page .lp-mobile-whats a.wa-cta{display:flex;width:100%;min-height:52px;padding:7px 14px;box-shadow:none;text-align:left}
-.lp-page .lp-mobile-whats a.wa-cta .wa-cta-label{font-size:.8rem}
-.lp-page .lp-mobile-whats a.wa-cta .wa-cta-phone{font-size:.7rem}
-.mobile-action a.wa-cta{width:100%;display:flex}
+.lp-page .lp-header-button.wa-cta{min-height:37px!important;padding:9px 13px!important}
+.lp-page .lp-header-button.wa-cta .wa-cta-label{font-size:11px!important}
+.lp-page .lp-mobile-whats{text-align:center}
+.lp-page .lp-mobile-whats a.wa-cta{min-height:42px!important;width:auto!important;max-width:100%!important;padding:10px 16px!important;box-shadow:none!important;margin:auto}
+.mobile-action{text-align:center}
+.mobile-action a.wa-cta{width:auto!important;max-width:100%;margin:auto}
 @media(max-width:1100px){.lp-page .lp-nav{display:none}.lp-page .lp-header-button.wa-cta{display:none}.lp-page .lp-mobile-menu{display:block}}
 @media(max-width:640px){
-  .lp-page .lp-hero-actions .wa-cta,
-  .lp-page .lp-center-action .wa-cta,
-  .lp-page .lp-situation-cta.wa-cta,
-  .lp-page .lp-about-copy .wa-cta,
-  .lp-page .lp-national .wa-cta,
-  .lp-page .lp-final-inner .wa-cta,
-  .lp-page .lp-faq-grid .wa-cta,
-  .lp-page .lp-mobile-whats a.wa-cta{width:100%;max-width:100%}
-  a.wa-cta .wa-cta-label{font-size:.86rem}
+  a.wa-cta,.lp-page a.wa-cta{font-size:11.5px!important;padding:10px 13px!important;white-space:normal!important}
+  a.wa-cta .wa-cta-label{font-size:11.5px!important;white-space:normal!important}
   .lp-page .lp-hero-actions{display:block}
+  .lp-page .lp-mobile-whats a.wa-cta{width:auto!important}
 }
