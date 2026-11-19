@@ -95,3 +95,25 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spac
 .disclaimer-publico p{max-width:none;color:#c9d7d9;font-size:.82rem;line-height:1.8;margin:0}
 .disclaimer-publico p strong{display:inline;color:#eff4f2;font-size:inherit;letter-spacing:normal;font-weight:650;margin:0}
 @media(max-width:740px){.disclaimer-publico{padding:19px 17px;gap:12px;margin-top:27px}.disclaimer-publico p{font-size:.79rem}.disclaimer-publico__icon{flex-basis:25px;width:25px;height:25px}}
+
+/* Banner do topo com fotografia enviada, otimizado para desktop e mobile — v5 */
+.hero{background-color:#071329;background-image:linear-gradient(90deg,rgba(5,14,30,.97) 0%,rgba(5,14,30,.85) 30%,rgba(5,14,30,.55) 47%,rgba(5,14,30,.10) 72%,rgba(5,14,30,.05) 100%),url("./hero-dr-marcos.webp");background-position:center center;background-repeat:no-repeat;background-size:cover}
+.hero::before,.hero::after{display:none}
+.hero-grid{grid-template-columns:1fr;min-height:675px;align-items:center;padding-top:95px;padding-bottom:105px;gap:0}
+.hero-grid>div:first-child{max-width:665px}
+.hero h1{font-size:clamp(2.9rem,5.2vw,5rem);text-shadow:0 2px 14px rgba(0,0,0,.12)}
+.hero p{max-width:590px;color:#e1ebee}
+.hero-art{display:none}
+.hero .eyebrow{color:#dfc39a}
+@media(max-width:1050px) and (min-width:741px){.hero-grid{min-height:610px}.hero-grid>div:first-child{max-width:57%}.hero h1{font-size:clamp(2.3rem,4.8vw,4rem)}.hero{background-position:59% center}}
+@media(max-width:740px){
+.hero{min-height:780px;background-image:linear-gradient(180deg,rgba(6,16,34,.99) 0%,rgba(6,16,34,.99) 22%,rgba(6,16,34,.94) 40%,rgba(6,16,34,.64) 57%,rgba(6,16,34,.08) 80%),url("./hero-dr-marcos.webp");background-position:center center,73% bottom;background-size:100% 100%,auto 405px}
+.hero-grid{display:block;min-height:780px;padding-top:51px;padding-bottom:350px}
+.hero-grid>div:first-child{max-width:none}
+.hero h1{font-size:clamp(2.5rem,10vw,3.7rem);line-height:1.08}
+.hero p{font-size:.96rem}
+.hero-actions{gap:10px;margin:24px 0 18px}
+.hero-actions .button{padding:13px 16px;font-size:.81rem}
+.hero .proof-line{gap:9px;padding-top:16px;font-size:.73rem}
+}
+@media(max-width:395px){.hero{min-height:845px;background-size:100% 100%,auto 390px}.hero-grid{min-height:845px;padding-bottom:355px}.hero h1{font-size:2.4rem}}
