@@ -206,35 +206,24 @@ body.lp-page{margin:0;background:#fff;color:#20313c;font-family:system-ui,-apple
  .lp-page .lp-hero .lp-hero-long-title{font-size:1.65rem}
 }
 
-
-/* Seção "Sua situação" com referência visual escura — v9 */
-.lp-page .lp-section.lp-situation-dark{background:#050611;color:#eef0f7;padding:80px 0 78px;overflow:hidden}
-.lp-page .lp-situation-grid{display:grid;grid-template-columns:minmax(0,49%) minmax(0,51%);align-items:center;gap:45px}
-.lp-page .lp-cnh-visual{min-width:0;display:flex;align-items:center;justify-content:center}
-.lp-page .lp-cnh-art{height:550px;position:relative;width:100%;max-width:550px;display:flex;align-items:center;justify-content:center}
-.lp-page .lp-cnh-art>img{position:relative;z-index:3;display:block;width:100%;height:100%;object-fit:contain}
-.lp-page .lp-cnh-art>img[hidden]{display:none}
-.lp-page .lp-cnh-illustration-back,.lp-page .lp-cnh-illustration-front{position:absolute;left:9%;top:25%;width:78%;height:56%;background:linear-gradient(125deg,#a4ded1 0%,#d4e5ce 34%,#9dbbba 58%,#c6ebdc 100%);border:9px solid #348d91;box-shadow:0 18px 22px #0006;overflow:hidden}
-.lp-page .lp-cnh-illustration-back{transform:rotate(-11deg) translate(-16px,57px);opacity:.88}
-.lp-page .lp-cnh-illustration-front{transform:rotate(-12deg) translate(24px,-48px);z-index:1}
-.lp-page .lp-cnh-header{background:linear-gradient(90deg,#005b71,#227c91);height:25%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e5f4ee;letter-spacing:.11em;text-align:center;font-family:Arial,sans-serif;font-size:clamp(.53rem,1.2vw,.86rem);font-weight:900}
-.lp-page .lp-cnh-header small{font-size:.49rem;color:#bddbd5}
-.lp-page .lp-cnh-picture{position:absolute;left:9%;top:35%;height:42%;width:26%;background:linear-gradient(160deg,#718e8d,#c9d7cf);border:2px solid #598b85}
-.lp-page .lp-cnh-lines{position:absolute;left:42%;top:36%;right:7%;display:grid;gap:15px}
-.lp-page .lp-cnh-lines i{display:block;height:15px;background:#adcfc0;border-bottom:2px solid #507d7b}
-.lp-page .lp-cnh-stamp{position:absolute;top:47%;left:-5%;width:110%;display:block;transform:rotate(-9deg);color:#e91420;font:900 clamp(1.7rem,3.4vw,3.3rem) Impact,Arial,sans-serif;text-align:center;white-space:nowrap;letter-spacing:.04em;border:6px solid #e91420;background:#ffffff25;padding:8px 0;text-shadow:1px 1px 0 #a80b10}
+/* Seção informativa branca, identidade limpa — v10 */
+.lp-page .lp-section.lp-situation-white{background:#fff;color:#192f3e;padding:88px 0}
+.lp-page .lp-situation-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:74px;align-items:center}
+.lp-page .lp-situation-photo{margin:0;min-width:0}
+.lp-page .lp-situation-photo img{width:100%;height:auto;display:block;border-radius:20px;background:#f1f4f1;border:1px solid #e8ebe7;box-shadow:0 17px 38px rgba(22,51,59,.065)}
+.lp-page .lp-situation-photo figcaption{color:#88949a;text-align:center;font-size:.69rem;line-height:1.4;margin-top:13px}
 .lp-page .lp-situation-content{min-width:0}
-.lp-page .lp-situation-eyebrow{display:block;color:#9ca0ac;font-size:.84rem;letter-spacing:.04em;margin-bottom:15px}
-.lp-page .lp-situation-heading{color:#f7f8fb;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:clamp(2rem,3.2vw,3.2rem);font-weight:500;letter-spacing:-.026em;line-height:1.17;margin:0 0 19px;max-width:650px}
-.lp-page .lp-situation-heading span{color:#f7f8fb}
-.lp-page .lp-situation-lead{color:#b7b8c5;font-size:.98rem;line-height:1.65;margin:0 0 25px;max-width:575px}
-.lp-page .lp-situation-list{display:flex;flex-direction:column;gap:17px;margin:0 0 27px}
-.lp-page .lp-situation-item{display:flex;align-items:flex-start;gap:15px}
-.lp-page .lp-situation-x{flex:0 0 33px;height:33px;display:grid;place-items:center;background:#21213f;border-radius:4px;color:#ff4658;font-family:Arial,sans-serif;font-weight:300;font-size:1.85rem;line-height:1}
-.lp-page .lp-situation-item p{color:#c4c4cf;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:.92rem;line-height:1.55;margin:0}
-.lp-page .lp-situation-item strong{color:#f1f1f5;font-weight:650}
-.lp-page .lp-situation-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:15px 27px;background:#21b868;color:#fff!important;border-radius:4px;font-size:.91rem;font-weight:700;box-shadow:0 0 0 1px #323342;transition:background .2s ease}
-.lp-page .lp-situation-cta:hover{background:#159e58;color:#fff!important}
-@media(max-width:980px){.lp-page .lp-situation-grid{gap:25px;grid-template-columns:minmax(0,46%) minmax(0,54%)}.lp-page .lp-cnh-art{height:450px}.lp-page .lp-situation-heading{font-size:clamp(1.8rem,3.4vw,2.8rem)}}
-@media(max-width:760px){.lp-page .lp-section.lp-situation-dark{padding:51px 0 58px}.lp-page .lp-situation-grid{grid-template-columns:1fr;gap:18px}.lp-page .lp-cnh-art{height:350px;max-width:470px}.lp-page .lp-situation-heading{font-size:clamp(1.85rem,7vw,2.7rem)}.lp-page .lp-situation-eyebrow{margin-bottom:11px}.lp-page .lp-situation-content{padding:0}.lp-page .lp-situation-item p{font-size:.9rem}.lp-page .lp-situation-cta{width:100%}}
-@media(max-width:420px){.lp-page .lp-cnh-art{height:300px}.lp-page .lp-situation-heading{font-size:1.9rem}.lp-page .lp-situation-list{gap:14px}.lp-page .lp-situation-item{gap:10px}}
+.lp-page .lp-situation-eyebrow{display:block;color:#a78252;font-size:.74rem;font-weight:800;letter-spacing:.15em;margin-bottom:14px}
+.lp-page .lp-situation-heading{font-family:Georgia,serif;color:#192f3e;font-weight:500;font-size:clamp(2.15rem,3.35vw,3.5rem);line-height:1.16;letter-spacing:-.035em;margin:0 0 18px}
+.lp-page .lp-situation-lead{color:#5e6e77;font-size:.98rem;line-height:1.77;margin:0 0 27px}
+.lp-page .lp-situation-list{display:flex;flex-direction:column;gap:0;border-top:1px solid #e9eeed}
+.lp-page .lp-situation-item{display:flex;gap:16px;align-items:flex-start;padding:15px 0;border-bottom:1px solid #e9eeed}
+.lp-page .lp-situation-icon{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;background:#f5f1ea;border-radius:10px;color:#a07d4e;font:700 .81rem system-ui,sans-serif}
+.lp-page .lp-situation-item h3{font:750 .96rem system-ui,-apple-system,"Segoe UI",Arial,sans-serif;letter-spacing:0;color:#223845;margin:0 0 3px}
+.lp-page .lp-situation-item p{font-size:.89rem;color:#687780;line-height:1.65;margin:0}
+.lp-page .lp-situation-cta{margin-top:26px;display:inline-flex;gap:12px;align-items:center;justify-content:center;min-height:52px;padding:14px 25px;background:#19394a;color:#fff!important;border-radius:7px;font-size:.88rem;font-weight:750;transition:background .2s}
+.lp-page .lp-situation-cta:hover{background:#295369;color:#fff!important}
+@media(max-width:1000px){.lp-page .lp-situation-grid{gap:34px;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}.lp-page .lp-situation-heading{font-size:clamp(1.9rem,3.2vw,2.8rem)}}
+@media(max-width:760px){.lp-page .lp-section.lp-situation-white{padding:60px 0}.lp-page .lp-situation-grid{grid-template-columns:1fr;gap:30px}.lp-page .lp-situation-photo{max-width:580px;margin:auto}.lp-page .lp-situation-heading{font-size:clamp(2rem,6.2vw,2.7rem)}.lp-page .lp-situation-cta{width:100%;text-align:center}.lp-page .lp-situation-item{padding:15px 0}.lp-page .lp-situation-photo figcaption{font-size:.66rem}}
+@media(max-width:420px){.lp-page .lp-situation-heading{font-size:2rem}.lp-page .lp-situation-icon{width:34px;height:34px;flex-basis:34px}.lp-page .lp-situation-item{gap:12px}}
+
