@@ -18,3 +18,39 @@
 @media(max-width:950px){.lp-page .lp-hero-grid{grid-template-columns:1fr!important;gap:20px!important;min-height:0!important;padding:72px 0 0!important}.lp-page .lp-hero-copy{padding-bottom:0!important}.lp-page .lp-hero-portrait{margin:0 auto;max-width:420px;width:100%}.lp-page .lp-hero-portrait img{max-height:460px}.lp-page .faq-shots-heading{margin-top:48px}}
 @media(max-width:620px){.lp-page .lp-hero-grid{padding-top:64px!important}.lp-page .lp-hero-portrait{max-width:330px}.lp-page .lp-hero-portrait img{max-height:380px}.lp-page .faq-shots-heading h3{font-size:1.85rem}.lp-page .faq-shot{flex-basis:275px}.lp-page .faq-shots-track{animation-duration:85s}}
 @media(prefers-reduced-motion:reduce){.lp-page .faq-shots-track{animation:none}.lp-page .faq-shots-viewport{overflow-x:auto;scroll-snap-type:x proximity}.lp-page .faq-shot{scroll-snap-align:start}}
+/* 19/11/2026: retrato fornecido pelo cliente, alinhado ao início da headline */
+@media (min-width:951px){
+  .lp-page .lp-hero-grid{
+    grid-template-columns:minmax(0,1.11fr) minmax(0,.89fr)!important;
+    align-items:start!important;
+    min-height:0!important;
+    padding:80px 0 68px!important;
+  }
+  .lp-page .lp-hero-copy{
+    align-self:start!important;
+    padding-bottom:0!important;
+  }
+  .lp-page .lp-hero-portrait{
+    align-self:start!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    margin-top:34px!important;
+  }
+  .lp-page .lp-hero-portrait img{
+    width:100%!important;
+    max-width:570px!important;
+    max-height:none!important;
+    height:auto!important;
+    object-position:top center!important;
+    filter:drop-shadow(0 18px 26px rgba(0,0,0,.16));
+  }
+}
+@media (max-width:950px){
+  .lp-page .lp-hero-copy{align-self:start!important;padding-bottom:0!important}
+  .lp-page .lp-hero-portrait{align-self:start!important;align-items:flex-start!important;margin-top:24px!important}
+  .lp-page .lp-hero-portrait img{width:100%!important;max-width:430px!important;max-height:none!important;height:auto!important;object-position:top center!important}
+}
+@media (max-width:620px){
+  .lp-page .lp-hero-portrait{margin-top:18px!important}
+  .lp-page .lp-hero-portrait img{max-width:345px!important;max-height:none!important}
+}
