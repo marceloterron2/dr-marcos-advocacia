@@ -1,0 +1,79 @@
+/* CTAs padronizados para WhatsApp — canal único de contato */
+a.wa-cta,
+.lp-page a.wa-cta,
+a.wa-cta.button,
+a.wa-cta.lp-btn,
+.lp-page a.wa-cta.lp-situation-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  vertical-align:middle;
+  gap:12px;
+  flex:0 1 auto;
+  max-width:100%;
+  min-height:60px;
+  padding:11px 19px;
+  border:1px solid #168c4c;
+  border-radius:8px;
+  background:#1da858 !important;
+  color:#fff !important;
+  text-decoration:none;
+  text-align:left;
+  box-shadow:0 5px 15px rgba(18,100,62,.16);
+  white-space:normal;
+  font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  cursor:pointer;
+  transition:background .2s,transform .2s;
+}
+a.wa-cta:hover,
+a.wa-cta:focus-visible,
+.lp-page a.wa-cta:hover{
+  background:#148849 !important;
+  border-color:#148849;
+  color:#fff !important;
+}
+a.wa-cta:hover{transform:translateY(-1px)}
+a.wa-cta .wa-cta-icon{
+  display:block;
+  flex:0 0 25px;
+  width:25px;
+  height:25px;
+  color:currentColor;
+}
+a.wa-cta .wa-cta-copy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:3px;
+  line-height:1.2;
+}
+a.wa-cta .wa-cta-label{font-size:.9rem;font-weight:760;letter-spacing:0}
+a.wa-cta .wa-cta-phone{font-size:.74rem;font-weight:600;letter-spacing:.02em;opacity:.93}
+.lp-page .lp-hero-actions{display:block}
+.lp-page .lp-hero-actions .wa-cta{width:auto;max-width:100%}
+.lp-page .lp-center-action .wa-cta{width:auto;max-width:100%}
+.lp-page .lp-situation-cta.wa-cta{width:auto;max-width:100%}
+.lp-page .lp-header-button.wa-cta{padding:8px 12px;min-height:49px}
+.lp-page .lp-header-button.wa-cta .wa-cta-icon{width:21px;height:21px;flex-basis:21px}
+.lp-page .lp-header-button.wa-cta .wa-cta-label{font-size:.75rem}
+.lp-page .lp-header-button.wa-cta .wa-cta-phone{font-size:.7rem}
+.lp-page .lp-header-inner{gap:13px}
+.lp-page .lp-nav{gap:16px}
+.lp-page .lp-mobile-whats a.wa-cta{display:flex;width:100%;min-height:52px;padding:7px 14px;box-shadow:none;text-align:left}
+.lp-page .lp-mobile-whats a.wa-cta .wa-cta-label{font-size:.8rem}
+.lp-page .lp-mobile-whats a.wa-cta .wa-cta-phone{font-size:.7rem}
+.mobile-action a.wa-cta{width:100%;display:flex}
+@media(max-width:1100px){.lp-page .lp-nav{display:none}.lp-page .lp-header-button.wa-cta{display:none}.lp-page .lp-mobile-menu{display:block}}
+@media(max-width:640px){
+  .lp-page .lp-hero-actions .wa-cta,
+  .lp-page .lp-center-action .wa-cta,
+  .lp-page .lp-situation-cta.wa-cta,
+  .lp-page .lp-about-copy .wa-cta,
+  .lp-page .lp-national .wa-cta,
+  .lp-page .lp-final-inner .wa-cta,
+  .lp-page .lp-faq-grid .wa-cta,
+  .lp-page .lp-mobile-whats a.wa-cta{width:100%;max-width:100%}
+  a.wa-cta .wa-cta-label{font-size:.86rem}
+  .lp-page .lp-hero-actions{display:block}
+}
