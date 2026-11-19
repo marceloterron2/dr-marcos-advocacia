@@ -78,3 +78,6 @@ a.wa-cta .wa-cta-icon{
   .lp-page .lp-hero-actions{display:block}
   .lp-page .lp-mobile-whats a.wa-cta{width:auto!important}
 }
+
+/* Correção preventiva: o número nunca aparece dentro de um CTA */
+a.wa-cta .wa-cta-phone,.lp-page a.wa-cta .wa-cta-phone{display:none!important}
