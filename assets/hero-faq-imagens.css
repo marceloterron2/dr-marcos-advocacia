@@ -54,3 +54,29 @@
   .lp-page .lp-hero-portrait{margin-top:18px!important}
   .lp-page .lp-hero-portrait img{max-width:345px!important;max-height:none!important}
 }
+
+/* Conheça o Advogado: exibir fotografia inteira, sem recorte ou sobreposição */
+.lp-page #advogado .lp-portrait-wrap{
+  display:block!important;
+  min-height:0!important;
+  height:auto!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:10px!important;
+  overflow:hidden!important;
+}
+.lp-page #advogado .lp-portrait-wrap::before{content:none!important;display:none!important}
+.lp-page #advogado .lp-portrait-header{display:none!important}
+.lp-page #advogado .lp-portrait-wrap img{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  min-height:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:10px!important;
+  filter:none!important;
+  transform:none!important;
+}
