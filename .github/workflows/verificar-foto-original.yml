@@ -1,0 +1,24 @@
+name: Verificar importação de foto original
+on:
+  push:
+    paths:
+      - ".github/workflows/verificar-foto-original.yml"
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testar acesso à imagem original no servidor de mídia
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://media.canva.com/ifs/M/4a3be12f-239e-4c02-bb14-c3b1fd6998fc'
+          echo 'Testando arquivo de origem direto:'
+          curl -sSL --fail --max-time 30 "$url" -o /tmp/foto-origem.jpeg || true
+          if [[ -f /tmp/foto-origem.jpeg ]]; then
+            echo "Bytes: $(stat -c%s /tmp/foto-origem.jpeg)"
+            sha256sum /tmp/foto-origem.jpeg
+            file /tmp/foto-origem.jpeg
+          else
+            echo 'Não foi possível acessar o arquivo de origem diretamente.'
+          fi
