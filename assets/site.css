@@ -227,3 +227,8 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spac
 /* Tipografia para headline longa solicitada — v7 */
 .lp-hero .lp-hero-long-title{font-size:clamp(2rem,3.15vw,3.15rem);line-height:1.18;max-width:755px;overflow-wrap:break-word}
 @media(max-width:640px){.lp-hero .lp-hero-long-title{font-size:clamp(1.78rem,6.8vw,2.1rem);line-height:1.23}}
+
+/* Fotografia institucional na página Sobre (sem textos provisórios) */
+.about-graphic.about-photo{min-height:0;background:transparent;display:block;overflow:hidden}
+.about-graphic.about-photo::before,.about-graphic.about-photo::after{content:none;display:none}
+.about-graphic.about-photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;border-radius:8px}
