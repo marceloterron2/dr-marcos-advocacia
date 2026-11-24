@@ -1,0 +1,24 @@
+name: Verificação de imagem do Canva
+on:
+  push:
+    paths:
+      - ".github/workflows/check-canva-photo.yml"
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspecionar a foto servida pelo provedor de origem
+        shell: bash
+        run: |
+          set -euo pipefail
+          for i in 1 2; do
+            if [[ $i == 1 ]]; then url='https://media.canva.com/v2/image-resize/format:JPG/height:200/quality:75/uri:ifs%3A%2F%2FM%2F4a3be12f-239e-4c02-bb14-c3b1fd6998fc/watermark:F/width:149?csig=AAAAAAAAAAAAAAAAAAAAAL3Dm_9_cqvNwfSyDt1LGa1I4OLVUipGe-adbVww6RKI&exp=1795552054&osig=AAAAAAAAAAAAAAAAAAAAADEhy6GkoSLEYIGvCPrPGe50nibyhKZ7AG1l-83aWE3E&signer=media-rpc&token=AAIAAU0AJDRhM2JlMTJmLTIzOWUtNGMwMi1iYjE0LWMzYjFmZDY5OThmYwAAAAABog8-CvCwTYEpka3aiGMkqGMtQC8ngpixAEKZBU0cKU7flKDU_Q&x-canva-quality=thumbnail'; else url='https://media.canva.com/v2/image-resize/format:JPG/height:2048/quality:100/uri:ifs%3A%2F%2FM%2F4a3be12f-239e-4c02-bb14-c3b1fd6998fc/watermark:F/width:1529?csig=AAAAAAAAAAAAAAAAAAAAAL3Dm_9_cqvNwfSyDt1LGa1I4OLVUipGe-adbVww6RKI&exp=1795552054&osig=AAAAAAAAAAAAAAAAAAAAADEhy6GkoSLEYIGvCPrPGe50nibyhKZ7AG1l-83aWE3E&signer=media-rpc&token=AAIAAU0AJDRhM2JlMTJmLTIzOWUtNGMwMi1iYjE0LWMzYjFmZDY5OThmYwAAAAABog8-CvCwTYEpka3aiGMkqGMtQC8ngpixAEKZBU0cKU7flKDU_Q&x-canva-quality=thumbnail'; fi
+            echo "Testando variante $i"
+            code=$(curl -sSL --max-time 30 -w '%{http_code}' "$url" -o "/tmp/image-$i.jpg" || true)
+            echo "HTTP: $code"
+            if [[ "$code" == "200" ]]; then
+              file "/tmp/image-$i.jpg"
+              sha256sum "/tmp/image-$i.jpg"
+              stat -c '%s bytes' "/tmp/image-$i.jpg"
+            fi
+          done
