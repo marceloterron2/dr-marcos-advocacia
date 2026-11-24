@@ -1,24 +1,13 @@
-/* Retrato recortado na primeira seção, textos e CTA preservados */
+
 .lp-page .lp-hero-grid{display:grid!important;grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr)!important;gap:clamp(20px,3.5vw,62px)!important;align-items:end!important;padding-top:60px!important;padding-bottom:0!important;min-height:655px}
 .lp-page .lp-hero-copy{align-self:center!important;padding-bottom:58px;min-width:0}
 .lp-page .lp-hero-portrait{display:flex!important;align-self:end;align-items:flex-end;justify-content:center;min-width:0;min-height:0;position:relative;z-index:2}
 .lp-page .lp-hero-portrait img{width:100%;height:auto;max-width:515px;max-height:620px;object-fit:contain;object-position:bottom;vertical-align:bottom;display:block;filter:drop-shadow(0 17px 21px rgba(0,0,0,.2))}
 .lp-page .lp-hero-display{display:none!important}
-/* Capturas originais dentro da seção de perguntas frequentes */
-.lp-page .faq-shots-heading{text-align:center;max-width:900px;margin:62px auto 28px}
-.lp-page .faq-shots-heading h3{font:500 clamp(1.8rem,3.2vw,2.8rem)/1.2 Georgia,serif;color:#173342;margin:14px 0 0}
-.lp-page .faq-shots-viewport{overflow:hidden;outline-offset:-3px;padding:10px 0 20px;width:100%}
-.lp-page .faq-shots-track{display:flex;align-items:center;width:max-content;animation:faq-shots-slide 72s linear infinite}
-.lp-page .faq-shots-viewport:hover .faq-shots-track,.lp-page .faq-shots-viewport:focus-within .faq-shots-track{animation-play-state:paused}
-.lp-page .faq-shots-set{display:flex;gap:16px;padding-right:16px;align-items:center;flex:0 0 auto}
-.lp-page .faq-shot{display:block;flex:0 0 275px;width:275px;height:322px;box-sizing:border-box;margin:0;background:#fff;overflow:hidden;border:1px solid #e4e8e9;border-radius:10px;box-shadow:0 8px 24px rgba(22,43,56,.1)}
-.lp-page .faq-shot-photo{display:block;width:100%;height:100%;background-image:url("./depoimentos-imagens-originais.webp");background-repeat:no-repeat;background-size:900% 100%;background-color:#fff}
-.lp-page .faq-shot:focus-visible{outline:3px solid #c4a06a;outline-offset:2px}
-@keyframes faq-shots-slide{to{transform:translateX(-50%)}}
-@media(max-width:950px){.lp-page .lp-hero-grid{grid-template-columns:1fr!important;gap:20px!important;min-height:0!important;padding:72px 0 0!important}.lp-page .lp-hero-copy{padding-bottom:0!important}.lp-page .lp-hero-portrait{margin:0 auto;max-width:420px;width:100%}.lp-page .lp-hero-portrait img{max-height:460px}.lp-page .faq-shots-heading{margin-top:48px}}
-@media(max-width:620px){.lp-page .lp-hero-grid{padding-top:64px!important}.lp-page .lp-hero-portrait{max-width:330px}.lp-page .lp-hero-portrait img{max-height:380px}.lp-page .faq-shots-heading h3{font-size:1.85rem}.lp-page .faq-shot{flex-basis:275px}.lp-page .faq-shots-track{animation-duration:85s}}
-@media(prefers-reduced-motion:reduce){.lp-page .faq-shots-track{animation:none}.lp-page .faq-shots-viewport{overflow-x:auto;scroll-snap-type:x proximity}.lp-page .faq-shot{scroll-snap-align:start}}
-/* 19/11/2026: retrato fornecido pelo cliente, alinhado ao início da headline */
+@media(max-width:950px){.lp-page .lp-hero-grid{grid-template-columns:1fr!important;gap:20px!important;min-height:0!important;padding:72px 0 0!important}.lp-page .lp-hero-copy{padding-bottom:0!important}.lp-page .lp-hero-portrait{margin:0 auto;max-width:420px;width:100%}.lp-page .lp-hero-portrait img{max-height:460px}}
+@media(max-width:620px){.lp-page .lp-hero-grid{padding-top:64px!important}.lp-page .lp-hero-portrait{max-width:330px}.lp-page .lp-hero-portrait img{max-height:380px}}
+
+
 @media (min-width:951px){
   .lp-page .lp-hero-grid{
     grid-template-columns:minmax(0,1.11fr) minmax(0,.89fr)!important;
@@ -55,7 +44,7 @@
   .lp-page .lp-hero-portrait img{max-width:345px!important;max-height:none!important}
 }
 
-/* Conheça o Advogado: exibir fotografia inteira, sem recorte ou sobreposição */
+
 .lp-page #advogado .lp-portrait-wrap{
   display:block!important;
   min-height:0!important;

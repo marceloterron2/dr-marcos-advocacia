@@ -1,4 +1,4 @@
-/* CTA WhatsApp compacto: ícone à direita, sem telefone visível — v2 */
+
 a.wa-cta,
 .lp-page a.wa-cta,
 a.wa-cta.button,
@@ -79,5 +79,5 @@ a.wa-cta .wa-cta-icon{
   .lp-page .lp-mobile-whats a.wa-cta{width:auto!important}
 }
 
-/* Correção preventiva: o número nunca aparece dentro de um CTA */
+
 a.wa-cta .wa-cta-phone,.lp-page a.wa-cta .wa-cta-phone{display:none!important}

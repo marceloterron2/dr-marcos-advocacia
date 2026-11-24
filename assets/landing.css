@@ -1,4 +1,4 @@
-/* Estilos isolados da página inicial. Evita conflitos de versões anteriores. */
+
 :root{color-scheme:light}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -8,7 +8,7 @@ body.lp-page{margin:0;background:#fff;color:#20313c;font-family:system-ui,-apple
 .lp-page a{color:inherit}
 .lp-page :focus-visible{outline:3px solid #d0a669;outline-offset:3px}
 .lp-page img{max-width:100%}
-.lp-page .preview-flag{background:#f0e7d9;color:#6a502c;text-align:center;padding:8px 14px;font-size:.76rem;font-weight:700;letter-spacing:.015em}
+
 .lp-page .disclaimer-publico{display:flex;align-items:flex-start;gap:17px;background:#152d3b;border:1px solid #49606a;border-left:4px solid #c6a16d;border-radius:9px;padding:24px 26px;margin-top:27px}
 .lp-page .disclaimer-publico__icon{flex:0 0 30px;display:grid;place-items:center;width:30px;height:30px;border:1px solid #c6a16d;border-radius:50%;color:#d8b98a;font:700 1.12rem Georgia,serif}
 .lp-page .disclaimer-publico strong{display:block;color:#f2e3ca;font-family:inherit;font-size:.82rem;letter-spacing:.04em;margin-bottom:10px}
@@ -20,7 +20,7 @@ body.lp-page{margin:0;background:#fff;color:#20313c;font-family:system-ui,-apple
 .lp-page .disclaimer-publico p{font-size:.77rem}
 }
 
-/* Landing page v6 — cassação da CNH: estrutura informativa, sem imagem de herói */
+
 .lp-page{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#20313c;background:#fff}
 .lp-page h1,.lp-page h2,.lp-page h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.035em}
 .lp-page a{text-decoration:none}
@@ -146,12 +146,12 @@ body.lp-page{margin:0;background:#fff;color:#20313c;font-family:system-ui,-apple
 @media(max-width:640px){.lp-container{width:min(100% - 36px,1180px)}.lp-header-inner{min-height:72px}.lp-brand b{font-size:1.06rem}.lp-brand small{font-size:.61rem}.lp-monogram{width:37px;height:37px}.lp-section{padding:65px 0}.lp-hero-grid{padding:68px 0 63px}.lp-hero h1{font-size:clamp(2.6rem,10vw,3.9rem)}.lp-hero p{font-size:.98rem}.lp-hero-actions{gap:10px;margin:25px 0}.lp-btn{width:100%;padding:14px 17px}.lp-hero-facts{font-size:.72rem;gap:8px 17px}.lp-disclosure>.lp-container{align-items:start}.lp-heading-center{margin-bottom:30px}.lp-pain-grid{gap:12px}.lp-pain-card{padding:21px 15px}.lp-pain-card h3{font-size:1.08rem}.lp-pain-card p{font-size:.82rem}.lp-round-icon{width:39px;height:39px}.lp-inline-note{display:block;padding:22px;margin-top:24px}.lp-inline-note .lp-btn{margin-top:18px}.lp-benefit{padding:22px 17px;gap:13px}.lp-benefit h3{font-size:1.15rem}.lp-steps{gap:22px}.lp-steps h3{font-size:1.16rem}.lp-steps p{font-size:.86rem}.lp-clarity-grid{grid-template-columns:1fr;gap:13px}.lp-clarity-grid article{padding:23px}.lp-about-grid{grid-template-columns:1fr}.lp-portrait-wrap{min-height:320px}.lp-portrait-wrap img{height:390px}.lp-faq-grid{grid-template-columns:1fr;gap:22px}.lp-national .lp-btn,.lp-final-inner .lp-btn{width:100%}.lp-footer{padding-bottom:80px}.lp-footer-top{grid-template-columns:1fr;gap:27px}.lp-copyright{margin-top:27px}.lp-mobile-whats{display:block;position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:75;padding:10px 18px;border-top:1px solid #d9d9d9;box-shadow:0 -4px 18px #1427351c}.lp-mobile-whats a{display:block;background:#142e3d;border-radius:6px;color:#fff;padding:14px;text-align:center;font-size:.85rem;font-weight:800}.lp-mobile-whats a span{margin-left:8px}.lp-footer .disclaimer-publico{margin-top:21px}}
 @media(prefers-reduced-motion:reduce){.lp-btn{transition:none}}
 
-/* Tipografia para headline longa solicitada — v7 */
+
 .lp-hero .lp-hero-long-title{font-size:clamp(2rem,3.15vw,3.15rem);line-height:1.18;max-width:755px;overflow-wrap:break-word}
 @media(max-width:640px){.lp-hero .lp-hero-long-title{font-size:clamp(1.78rem,6.8vw,2.1rem);line-height:1.23}}
 
 
-/* Correções de layout e estabilidade — v8 */
+
 .lp-page{overflow-x:clip}
 .lp-page .lp-container{max-width:1180px;min-width:0}
 .lp-page .lp-header-inner>*{min-width:0}
@@ -206,7 +206,7 @@ body.lp-page{margin:0;background:#fff;color:#20313c;font-family:system-ui,-apple
  .lp-page .lp-hero .lp-hero-long-title{font-size:1.65rem}
 }
 
-/* Seção informativa branca, identidade limpa — v10 */
+
 .lp-page .lp-section.lp-situation-white{background:#fff;color:#192f3e;padding:88px 0}
 .lp-page .lp-situation-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:74px;align-items:center}
 .lp-page .lp-situation-photo{margin:0;min-width:0}
